@@ -7,14 +7,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Login endpoint
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
-
-Route::get('home', function () {
-    return view('home');
-});
 
 // All contacts
 Route::get('/contacts', function () {
@@ -62,3 +54,9 @@ Route::get('/logout', function  (){
     return view('login');
 })->name('logout');
 
+
+
+// Login endpoint
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
